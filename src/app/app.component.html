@@ -1,0 +1,24 @@
+
+<div class="flex column h-full">
+  <div class="flex-grow">
+    <igx-category-chart
+    #chart
+    height="370px"
+    width="100%"
+    chartType="line"
+    markerTypes="Circle"
+    [dataSource]="dataCategory"
+    unknownValuePlotting= "LinearInterpolate"
+    [outlines]="brushes"
+    [markerBrushes]="brushes"
+    [brushes]="brushes"
+    [markerOutlines]="brushes"
+    negativeOutlines="#0000ff, #0000cc, #0000aa"
+    plotAreaMarginBottom="10"
+    plotAreaMarginTop="10"
+    plotAreaMarginRight="10"
+    plotAreaMarginLeft="10"
+    >
+    </igx-category-chart>
+  </div>
+</div>
